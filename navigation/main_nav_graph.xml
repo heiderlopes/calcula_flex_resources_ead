@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/betterFuelFragment">
+    <fragment
+        android:id="@+id/betterFuelFragment"
+        android:name="br.com.heiderlopes.calculadoraflex.ui.betterfuel.BetterFuelFragment"
+        android:label="BetterFuelFragment"
+        tools:layout="@layout/fragment_better_fuel">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://www.calculaflex.com.br/betterfuelfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="br.com.heiderlopes.calculadoraflex.ui.signup.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="https://www.calculaflex.com.br/signup" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="br.com.heiderlopes.calculadoraflex.ui.login.LogInFragment"
+        android:label="LogInFragment"
+        tools:layout="@layout/fragment_log_in" />
+</navigation>
